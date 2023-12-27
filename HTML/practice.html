@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      width: 600px;
+      height: 600px;
+      /* background-color: black; */
+      margin: 50px auto;
+    }
+
+    .box1 {
+      min-width: 200px;
+      min-height: 200px;
+      background-color: #ffa500;
+      padding: 1px;
+    }
+    .box2 {
+      min-width: 200px;
+      min-height: 200px;
+      background-color: white;
+    }
+    .box3 {
+      min-width: 200px;
+      min-height: 200px;
+      background-color: green;
+    }
+
+    .circle div {
+      min-height: 100px;
+      width: 120px;
+      position: relative;
+      margin: 0 auto;
+      top: 50px;
+      border-radius: 50%;
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box1 box"></div>
+      <div class="box2 box circle"><div class="circle"></div></div>
+      <div class="box3 box"></div>
+    </div>
+  </body>
+</html>

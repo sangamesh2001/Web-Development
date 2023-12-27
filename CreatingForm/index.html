@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Sign up</h2>
+    <fieldset>
+      <form action="">
+        <table>
+          <tr>
+            <td>
+              <label for="name">Name:</label>
+            </td>
+            <td>
+              <input type="text" name="name" id="name" required />
+              <p>Enter your name</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="clg">College:</label>
+            </td>
+            <td><input type="text" name="clg"  id="clg" disabled /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="mail">Email:</label>
+            </td>
+            <td>
+              <input type="email" name="email" id="mail" required checked />
+              <p>Enter the mail</p>
+              <img src="check.jpg" alt="image" />
+              <img src="warning.jpg" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pwd">Password:</label>
+            </td>
+            <td>
+              <input type="password" name="pwd" id="pwd" required />
+              <p>Please provide strong password</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Gender:</label>
+            </td>
+            <td>
+              <input type="radio" name="gender" checked />
+              <label for="">Male</label>
+              <input type="radio" name="gender" />
+              <label for="">Female</label>
+              <input type="radio" name="gender" />
+              <label for="">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="age">Age:</label></td>
+            <td>
+              <input
+                type="number"
+                name="age"
+                id="age"
+                min="18"
+                max="100"
+                placeholder="Ex:18"
+              />
+              <img src="check.jpg" alt="image" />
+              <img src="warning.jpg" alt="" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">MOD:</label>
+            </td>
+            <td>
+              <input type="text" name="mod" id="" value="online" readonly />
+              <p>due to covid online is not available currently</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="responce.html"><input type="button" value="Submit" required /></a>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+</html>

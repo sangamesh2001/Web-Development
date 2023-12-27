@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: teal;
+        }
+        h1{
+            background-color: aqua;
+        }
+        h2,h3{
+            background-color: aquamarine;
+        }
+        .first, .first+li{
+            background-color: orange;
+        }
+
+        .first+li+li+li{
+            background-color: green;
+            color: brown;
+            font-family: cursive;
+        }
+        ol + h2 + ul{
+            background-color: cadetblue;
+        }
+
+        .code+li{
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>First list</h1>
+    <ol>
+        <li class="code">$</li>
+        <li>#</li>
+        <li>@</li>
+    </ol>
+    <h2>second list</h2>
+    <ul>
+        <li class="first">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <h1>third list</h1>
+    <ul>
+        <li class="first">5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+    </ul>
+    <h1>fourth list</h1>
+    <ul>
+        <li class="first">9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+    </ul>
+</body>
+</html>

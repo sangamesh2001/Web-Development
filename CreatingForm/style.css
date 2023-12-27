@@ -1,0 +1,60 @@
+body{
+    background-color: yellow;
+    font-family: cursive;
+}
+input:required{
+    border: 2px solid red;
+}
+input:not(:required){
+    border: 1px dashed violet;
+}
+
+input:focus{
+    background-color: grey;
+    font-weight: bold;
+    font-family: cursive;
+}
+p{
+    display: none;
+}
+input:hover + p{
+    background-color: red;
+    display: inline;
+}
+input[type = "radio"]:focus:hover + label{
+    color: red;
+    font-size: 20px;
+}
+
+img{
+    height: 20px;
+    width: 20px;
+    display: none;
+}
+
+input[type = "email"]:focus:valid ~ img[src = "check.jpg"]{
+    display: inline;
+}
+input[type = "email"]:focus:invalid ~ img[src = "warning.jpg"]{
+    display: inline;
+}
+
+input[type = "number"]:focus:in-range ~ img[src = "check.jpg"]{
+    display: inline;
+}
+input[type = "number"]:focus:out-of-range ~ img[src = "warning.jpg"]{
+    display: inline;
+}
+input::placeholder{
+    font-family: cursive;
+}
+
+input[type = "button"]{
+    border: 2px solid violet;
+    cursor: pointer;
+    font-family: cursive;
+}
+input[type = "button"]:focus{
+    background-color: green;
+    
+}

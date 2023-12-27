@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        body{
+            background-color: grey;
+        }
+        body>h1{
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            text-align: center;
+        }
+        body>p{
+            background-color: yellow;
+        }
+
+        div p{
+            background-color: aquamarine;
+            color: black;
+            font-family: cursive;
+        }
+        div>p{
+            background-color: orange;
+            color: blue;
+        }
+        span.sp>p{
+          background-color: blueviolet;
+          color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to HTML</h1>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum repudiandae dolores, eius eaque odio ullam laboriosam nulla magnam voluptatum suscipit dolore quisquam iusto aut, nihil ex sunt nobis placeat rem?</p>
+     <div class="firstdiv">
+        <p>first p in first div</p>
+        <span class="sp"><p>span inside p</p></span>
+        <div class="seconddiv">
+            <p>second div inside p</p>
+            <span><p>second div inside span inside p</p></span>
+            <div class="thirddiv">
+                <p>Third div inside p</p>
+                <span><h1>welcom 3<sup>rd</sup>div</h1></span>
+            </div>
+        </div>
+     </div>
+     <p>end</p>
+</body>
+</html>
